@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./img/icon.png">
+    <title>Ninja Arcade</title>
+</head>
+
+<body>
+    <div id="plano-de-fundo"></div>
+    <div id="container-status">
+        <div id="containerhp1">
+            <div class="barra-de-hp" id="hp1" data-vida="100"></div>
+        </div>
+        <div id="containerhp2">
+            <div class="barra-de-hp" id="hp2" data-vida="100"></div>
+        </div>
+    </div>
+    <div id="container-numero">
+        <div id="display-numero-container">
+            <div id="display-numero"></div>
+        </div>
+        <button>Rolar</button>
+    </div>
+    <img class="personagem" src="./img/p1.gif" alt="" id="p1">
+    <img class="personagem" src="./img/p2.gif" alt="" id="p2">
+    <div id="chao"></div>
+    <audio>
+        <source src="./audio/bgm.mp3" type="audio/mpeg">
+    </audio>
+
+    <script type="module" src="./scripts/script.js"></script>
+
+</body>
+
+</html>

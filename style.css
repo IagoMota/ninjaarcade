@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    animation: relampago 15s infinite;
+}
+
+#plano-de-fundo {
+    position: absolute;
+    top: 0;
+    background-image: url("./img/bg.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+#container-status {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 2rem;
+    width: 100%;
+    padding: 0.5rem 1rem;
+}
+
+#container-numero {
+    display: flex;
+    opacity: 0
+    ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: absolute;
+    top: 100px;
+    left: calc(50% - 3.5rem);
+    background-color: #00000077;
+    border-radius: 1rem;
+    border: solid rgb(85, 73, 3) 2px;
+    height: 8rem;
+    width: 8rem;
+    transition: 1s;
+}
+
+#display-numero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    transform: rotate(45deg);
+    box-shadow: 0px 0px 2px 10px purple;
+    border-radius: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.542);
+    color: rgb(103, 103, 3);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#display-numero {
+    transform: rotate(-45deg);
+}
+
+button {
+    background-color: black;
+    color: red;
+}
+
+.barra-de-hp {
+    background-color: rgb(145, 6, 6);
+    height: 100%;
+    width: 100%;
+    animation: pulsar 2s infinite;
+    border-radius: 100px;
+
+}
+
+#containerhp1 {
+    transform: skew(-50deg);
+    border: solid black 3px;
+    height: 100%;
+    border-radius: 100px;
+    width: 200px;
+}
+
+#containerhp2 {
+    transform: skew(50deg);
+    border: solid black 3px;
+    height: 100%;
+    border-radius: 100px;
+    width: 200px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.personagem {
+    position: absolute;
+    height: 6rem;
+    width: 5rem;
+    transition: 0.5s;
+}
+
+#p1 {
+    left: 20px;
+    bottom: 1.8rem;
+
+}
+
+#p1:hover {
+    filter: drop-shadow(0px 0px 2px purple);
+}
+
+#p2 {
+    right: 20px;
+    transform: scaleX(-1);
+    bottom: 2rem;
+}
+
+#p2:hover {
+    filter: drop-shadow(0px 0px 2px red);
+}
+
+#chao {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    background-color: rgb(24, 24, 24);
+    height: 2rem;
+    border: solid black 2px;
+}
+
+.machucado {
+    filter: drop-shadow(0px 0px 120px red);
+    scale: 2;
+}
+/* Animações */
+@keyframes pulsar {
+    0% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes relampago {
+    0% {
+        filter: brightness(5);
+        background-color: white;
+    }
+
+    10% {
+        filter: brightness(1);
+        background-color: transparent;
+    }
+}
