@@ -1,0 +1,23 @@
+{
+  "name": "ninjaarcade",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IagoMota/ninjaarcade.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IagoMota/ninjaarcade/issues"
+  },
+  "homepage": "https://github.com/IagoMota/ninjaarcade#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
